@@ -1,0 +1,50 @@
+		body {
+			background-image: url(fon4.jpeg);
+			background-size: cover;
+		}
+		h1 {
+			text-align: center;
+			font: 800% Mistral;
+		}
+		.imgl, .imgr {
+			display: inline;
+			padding-bottom: 200px;
+		}
+		.imgl {
+			float: left;
+			padding-left: 150px;
+		}
+		.imgr {
+			float: right;
+			padding-right: 150px;
+		}
+		.img1 {
+			width: 500px;
+			height: 270px;
+			border: 4px dashed white;
+			box-shadow: 0 0 30px white;
+		}
+		.hov1, .hov2, .hov3{
+			display: inline-block;
+			position: relative;
+		}
+		.hov1:hover::after, .hov2:hover::after, .hov3:hover::after {
+			content: attr(data-title);
+			position: absolute;
+			left: 4px; right: 4px; bottom: 8px; top: 4px;
+			z-index: 1;
+			background: rgba(0, 0, 0, 0.5);
+			color: #fff;
+			text-align: center;
+			font-family: Arial, sans-serif;
+			font-size: 40px;
+		}
+		.hov1:hover::after {
+			padding: 70px;
+		}
+		.hov2:hover::after {
+			padding: 95px;
+		}
+		.hov3:hover::after {
+			padding-top: 115px;
+		}
